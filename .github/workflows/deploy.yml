@@ -30,4 +30,5 @@ jobs:
           #   cache: 'npm'
       - run: yarn
       - run: cp /home/ubuntu/.env /home/ubuntu/backend-runner/Magner-Backend/Magner-backend/Magner-backend/.env
+      - run: yarn run build
       - run: pm2 restart 2
