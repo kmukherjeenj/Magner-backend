@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           #   cache: 'npm'
-      - run: yarn dd
-      - run: cp /home/ubuntu/.env /home/ubuntu/actions-runner/Deelio/Dealio-Backend/Dealio-Backend/.env
-      - run: cp /home/ubuntu/config.json /home/ubuntu/actions-runner/Deelio/Dealio-Backend/Dealio-Backend/config.json
-      - run: pm2 restart 0
+      - run: yarn
+      - run: cp /home/ubuntu/.env /home/ubuntu/backend-runner/Magner-Backend/Magner-backend/Magner-backend/.env
+      - run: pm2 restart 2
