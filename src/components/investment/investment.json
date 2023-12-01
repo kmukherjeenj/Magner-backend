@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_investment_investments",
+  "info": {
+    "displayName": "investment",
+    "icon": "house",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "typer": {
+      "type": "enumeration",
+      "enum": [
+        "Ground Up",
+        "Value Add",
+        "Core",
+        "CorePlus",
+        "Stabilized",
+        "Owner/User",
+        "Redevelopment"
+      ],
+      "required": true,
+      "default": "Ground Up"
+    },
+    "netOperatingIncome": {
+      "type": "string",
+      "required": true
+    },
+    "capRate": {
+      "type": "string",
+      "required": true
+    },
+    "proformaNoi": {
+      "type": "string",
+      "required": true
+    },
+    "proformaCap": {
+      "type": "string",
+      "required": true
+    },
+    "investPricePerSqft": {
+      "type": "float",
+      "required": true
+    },
+    "investPricePerUnit": {
+      "type": "float",
+      "required": true
+    },
+    "investPricePerSf": {
+      "type": "float",
+      "required": true
+    },
+    "groundLease": {
+      "type": "enumeration",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "default": "Yes"
+    },
+    "yearRemaining": {
+      "type": "string",
+      "required": true
+    },
+    "occupancy": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listings",
+  "info": {
+    "singularName": "listing",
+    "pluralName": "listings",
+    "displayName": "Listing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "listType": {
+      "type": "enumeration",
+      "enum": [
+        "Sales",
+        "Lease"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "tenant": {
+      "type": "enumeration",
+      "enum": [
+        "Single",
+        "Multi"
+      ],
+      "required": true,
+      "default": "Single"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "subtype": {
+      "type": "json"
+    },
+    "rentableSize": {
+      "type": "float",
+      "required": true
+    },
+    "useableSize": {
+      "type": "float",
+      "required": true
+    },
+    "annualPrice": {
+      "type": "float",
+      "required": true
+    },
+    "monthlyPrice": {
+      "type": "float",
+      "required": true
+    },
+    "pricePerSqft": {
+      "type": "float",
+      "required": true
+    },
+    "dimensions": {
+      "type": "string",
+      "required": true
+    },
+    "frontage": {
+      "type": "string"
+    },
+    "floor": {
+      "type": "string",
+      "required": true
+    },
+    "listingType": {
+      "type": "enumeration",
+      "enum": [
+        "Direct",
+        "Sublet"
+      ],
+      "required": true,
+      "default": "Direct"
+    },
+    "leaseStructure": {
+      "type": "enumeration",
+      "enum": [
+        "Modified Gross",
+        "Gross",
+        "NNN",
+        "Net",
+        "Full Service"
+      ],
+      "default": "Modified Gross",
+      "required": true
+    },
+    "leaseTerm": {
+      "type": "text",
+      "required": true
+    },
+    "crossStreet": {
+      "type": "string",
+      "required": true
+    },
+    "zoning": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "string",
+      "required": true
+    },
+    "gallery": {
+      "type": "json",
+      "required": true
+    },
+    "video": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "location.location",
+      "required": true
+    },
+    "features": {
+      "type": "json",
+      "required": true
+    },
+    "totalBuildingSize": {
+      "type": "float",
+      "required": true
+    },
+    "maxContiguoseSize": {
+      "type": "float",
+      "required": true
+    },
+    "totalSpaceAvailable": {
+      "type": "float",
+      "required": true
+    },
+    "totalVacant": {
+      "type": "float"
+    },
+    "buildingFar": {
+      "type": "string",
+      "required": true
+    },
+    "elevator": {
+      "type": "string",
+      "required": true
+    },
+    "lotSize": {
+      "type": "float",
+      "required": true
+    },
+    "lotDimensions": {
+      "type": "string",
+      "required": true
+    },
+    "buildingClass": {
+      "type": "string",
+      "required": true
+    },
+    "floorLoad": {
+      "type": "string",
+      "required": true
+    },
+    "yearBuilt": {
+      "type": "integer",
+      "required": true
+    },
+    "ofFloors": {
+      "type": "string",
+      "required": true
+    },
+    "taxes": {
+      "type": "string",
+      "required": true
+    },
+    "totalParkingSpaces": {
+      "type": "string",
+      "required": true
+    },
+    "investment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "investment.investment"
+    }
+  }
+}
